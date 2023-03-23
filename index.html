@@ -11,8 +11,8 @@
 
     <div id="app">
         <section>
-            <ul>
-                <li v-for="(email, index) in randomMail" v-if="randomMail.length == 10">
+            <ul v-for="(email, index) in randomMail">
+                <li v-if="randomMail.length == 10">
                     {{ randomMail[index] }}
                 </li>
             </ul>
